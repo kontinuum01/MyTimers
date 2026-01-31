@@ -1,4 +1,4 @@
-package com.example.mytimers.rxjava
+package com.example.mytimers.rxjava.model
 
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Observable

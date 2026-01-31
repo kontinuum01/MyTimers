@@ -3,9 +3,9 @@ package com.example.mytimers
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mytimers.coroutines.CoroutinesActivity
+import com.example.mytimers.coroutines.view.CoroutinesActivity
 import com.example.mytimers.databinding.ActivityMainBinding
-import com.example.mytimers.rxjava.RxJavaActivity
+import com.example.mytimers.rxjava.view.RxJavaActivity
 
 class MainActivity : AppCompatActivity() {
 

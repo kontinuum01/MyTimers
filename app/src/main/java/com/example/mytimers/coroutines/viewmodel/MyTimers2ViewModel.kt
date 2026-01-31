@@ -1,8 +1,9 @@
-package com.example.mytimers.coroutines
+package com.example.mytimers.coroutines.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.mytimers.coroutines.model.MyTimers2
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

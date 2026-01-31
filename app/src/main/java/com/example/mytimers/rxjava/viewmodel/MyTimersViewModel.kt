@@ -1,8 +1,9 @@
-package com.example.mytimers.rxjava
+package com.example.mytimers.rxjava.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.mytimers.rxjava.model.MyTimers
 import io.reactivex.rxjava3.disposables.Disposable
 
 class MyTimersViewModel : ViewModel() {

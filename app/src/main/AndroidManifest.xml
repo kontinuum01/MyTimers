@@ -12,10 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyTimers">
         <activity
-            android:name=".coroutines.CoroutinesActivity"
+            android:name=".coroutines.view.CoroutinesActivity"
             android:exported="false" />
         <activity
-            android:name=".rxjava.RxJavaActivity"
+            android:name=".rxjava.view.RxJavaActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

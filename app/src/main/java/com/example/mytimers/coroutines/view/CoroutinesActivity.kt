@@ -1,19 +1,20 @@
-package com.example.mytimers.rxjava
+package com.example.mytimers.coroutines.view
 
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.example.mytimers.databinding.ActivityRxjavaBinding
+import com.example.mytimers.coroutines.viewmodel.MyTimers2ViewModel
+import com.example.mytimers.databinding.ActivityCoroutinesBinding
 import java.util.Locale
 
-class RxJavaActivity : AppCompatActivity() {
+class CoroutinesActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityRxjavaBinding
-    private val viewModel: MyTimersViewModel by viewModels()
+    private lateinit var binding: ActivityCoroutinesBinding
+    private val viewModel : MyTimers2ViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityRxjavaBinding.inflate(layoutInflater)
+        binding = ActivityCoroutinesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // Наблюдаем за изменением времени
@@ -39,7 +40,6 @@ class RxJavaActivity : AppCompatActivity() {
         val minutes = (timeInSeconds % 3600) / 60
         val seconds = timeInSeconds % 60
         binding.timerTextView.text =
-            String.format(Locale.getDefault(), "%02d:%02d", minutes, seconds)
+            String.Companion.format(Locale.getDefault(), "%02d:%02d", minutes, seconds)
     }
-
 }
